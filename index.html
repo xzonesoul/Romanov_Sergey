@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Документ без названия</title>
+<style>
+@keyframes bounce {
+from, to {
+-webkit-transform: translateY(10vh) scaleY(.98);
+transform: translateY(10vh) scaleY(.98);
+}
+80% {
+-webkit-transform: translateY(10vh) scaleY(1.02);
+transform: translateY(10vh) scaleY(1.02);
+}
+}
+.serdse {
+border-radius: 9vw 11vw 1vw 20vw;
+width: 120px;
+height: 165px;
+background-image: radial-gradient(ellipse farthest-corner at 0 0, #FF414A,#f00);
+margin: 0 auto;
+-webkit-transform-origin: center bottom;
+transform-origin: center bottom;
+-webkit-animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 0.50) infinite;
+animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 0.50) infinite;
+float: left;
+}
+@keyframes bounce {
+from, to {
+-webkit-transform: translateY(10vh) scaleY(.98);
+transform: translateY(10vh) scaleY(.98);
+}
+80% {
+-webkit-transform: translateY(10vh) scaleY(1.02);
+transform: translateY(10vh) scaleY(1.02);
+}
+}
+.serdse1 {
+border-radius: 15vw 11vw 25vw 1vw;
+width: 120px;
+height: 165px;
+background-image: radial-gradient(ellipse farthest-corner at 100% 0%, #FF414A,#f00);
+margin: 0 0 0 105px;
+-webkit-transform-origin: center bottom;
+transform-origin: center bottom;
+-webkit-animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 0.50) infinite;
+animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 0.50) infinite;
+}
+
+.serdse1::after {
+content: '';
+position: absolute;
+left: -33px;
+bottom: -50px;
+border: 40px solid transparent;
+border-top: 20px solid #f00;
+}
+
+</style>
+</head>
+<body>
+<div class="serdse"></div>
+<div class="serdse1"></div>
+</body>
+</html>
